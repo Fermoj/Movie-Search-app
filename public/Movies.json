@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": true
+    },
+    {
+        "id": "2",
+        "name": "Johan",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": true
+
+    },
+    {
+        "id": "3",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "4",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "5",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "6",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "7",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "8",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "9",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    },
+    {
+        "id": "10",
+        "name": "Titanic",
+        "rating": 2.1,
+        "image": "image/Titanic_poster.png",
+        "isFavorite": false
+
+    }
+
+]

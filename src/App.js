@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import TrailerPage from './pages/TrailerPage'
+import ListPage from './pages/ListPage'
+import { ListProvider } from './components/ListContext'
+import ErrorPage from './pages/ErrorPage'
+import NavBar from './components/NavBar'
+import FootEr from './components/FootEr'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <ListProvider>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/trailers" element={<TrailerPage />} />
+                    <Route path="/watchlist" element={<ListPage />} />
+                    <Route path="*" element={<ErrorPage />} />
+                </Routes>
+            </ListProvider>
+            <FootEr />
+        </>
+    )
 }
 
-export default App;
+export default App
