@@ -6,21 +6,39 @@ import { BsFillStarFill, BsStar } from 'react-icons/bs'
 function HomePage() {
     const slides = [
         {
-            image: './image/HeroImg.jpg',
+            image: './image/Avatar.jpg',
+            title: 'Avatar',
+            rating: [
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsStar />
+            ],
+            time: '2h : 22min'
+        },
+        {
+            image: './image/TheDarkKnight.jpg',
             title: 'Batman',
-            rating: [<BsFillStarFill/>,<BsFillStarFill/>,<BsFillStarFill/>,<BsFillStarFill/> ,<BsStar/>] ,
+            rating: [
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsStar />,
+                <BsStar />
+            ],
             time: '2h : 22min'
         },
         {
-            image: './image/Titanic_poster.png',
-            title: 'Movie',
-            rating: [<BsFillStarFill/>,<BsFillStarFill/>,<BsFillStarFill/>,<BsStar/> ,<BsStar/>],
-            time: '2h : 22min'
-        },
-        {
-            image: './image/HeroImg.jpg',
-            title: 'Movie',
-            rating: [<BsFillStarFill/>,<BsFillStarFill/>,<BsFillStarFill/>,<BsFillStarFill/> ,<BsStar/>],
+            image: './image/Intersteller.jpg',
+            title: 'Intersteller',
+            rating: [
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsFillStarFill />,
+                <BsStar />
+            ],
             time: '2h : 22min'
         }
     ]

@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { BsFillStarFill, BsStar } from 'react-icons/bs'
 import ListContext from './ListContext'
 
-function MovieCards({title, rating}) {
-    const {addToList}=useContext(ListContext)
+function MovieCards({ title, rating }) {
+    const { addToList } = useContext(ListContext)
     const [movies, setMovies] = useState([])
     const [search, setSearch] = useState('')
 
@@ -36,64 +36,71 @@ function MovieCards({title, rating}) {
 
     return (
         <>
-        <Wrap>
-            <Search>
-                <Title>Fans favorites </Title>
-                <input
-                    type="text"
-                    placeholder="Search..."
-                    onChange={handleSearch}
-                />
-            </Search>
-            <Card className="container">
-                <div className="row">
-                    {filteredMovies.map((movie, index) => (
-                        <div className="col" key={movie.id}>
-                            <div
-                                className="card"
-                                style={{ width: '10rem', margin: '1rem' }}
-                            >
-                                <img
-                                    className="card-img-top"
-                                    src={movie.image}
-                                    alt="About-movies"
-                                />
-                                <div className="card-body">
-                                    <div className="star-rate">
-                                        <p
-
-                                            onClick={() => toggleStar(index)}
-                                        >
-                                            {movie.isFavorite ? (
-                                                <BsFillStarFill />
-                                            ) : (
-                                                <BsStar />
-                                            )}
-                                        </p>
-                                        <p className="card-text">
-                                            {movie.rating}
-                                        </p>
-                                    </div>
-                                    <div className="add-title">
-                                    <h5 className="card-title">{movie.name}</h5>
-                                    <i className="fa-solid fa-plus" id="add" onClick={()=>addToList(title,rating)}></i>
+            <Wrap>
+                <Search>
+                    <Title>Fans favorites </Title>
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        onChange={handleSearch}
+                    />
+                </Search>
+                <Card className="container">
+                    <div className="row">
+                        {filteredMovies.map((movie, index) => (
+                            <div className="col" key={movie.id}>
+                                <div
+                                    className="card"
+                                    style={{ width: '10rem', margin: '1rem' }}
+                                >
+                                    <img
+                                        className="card-img-top"
+                                        src={movie.image}
+                                        alt="About-movies"
+                                    />
+                                    <div className="card-body">
+                                        <div className="star-rate">
+                                            <p
+                                                onClick={() =>
+                                                    toggleStar(index)
+                                                }
+                                            >
+                                                {movie.isFavorite ? (
+                                                    <BsFillStarFill />
+                                                ) : (
+                                                    <BsStar />
+                                                )}
+                                            </p>
+                                            <p className="card-text">
+                                                {movie.rating}
+                                            </p>
+                                        </div>
+                                        <div className="add-title">
+                                            <h5 className="card-title">
+                                                {movie.name}
+                                            </h5>
+                                            <i
+                                                className="fa-solid fa-plus"
+                                                id="add"
+                                                onClick={() =>
+                                                    addToList(title, rating)
+                                                }
+                                            ></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </Card>
+                        ))}
+                    </div>
+                </Card>
             </Wrap>
         </>
     )
 }
 export default MovieCards
 
-const Wrap= styled.div`
-margin-top: 50px;
-
-
+const Wrap = styled.div`
+    margin-top: 50px;
 `
 const Title = styled.div`
     background-color: lightgrey;
@@ -107,5 +114,5 @@ const Card = styled.div`
 const Search = styled.form`
     display: flex;
     justify-content: space-between;
-margin-right: 30px;
+    margin-right: 30px;
 `

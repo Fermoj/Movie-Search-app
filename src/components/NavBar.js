@@ -71,5 +71,4 @@ const TrailerContainer = styled.div`
 
 const ListContainer = styled.div`
     margin-right: 10px;
-    //Check
 `

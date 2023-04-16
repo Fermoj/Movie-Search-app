@@ -7,7 +7,7 @@ function WatchList() {
     return (
         <>
             <MovieWrap>
-                <h1>Movie List</h1>
+                <Title>Movie List</Title>
                 <div>
                     {items.map((item, index) => (
                         <ul key={index}>
@@ -22,8 +22,14 @@ function WatchList() {
 }
 
 export default WatchList
+
+const Title= styled.h1`
+display: flex;
+justify-content: space-between;
+`
 const MovieWrap = styled.div`
     display: Flex;
     justify-content: center;
     padding: 30px;
+    background-color: antiquewhite;
 `

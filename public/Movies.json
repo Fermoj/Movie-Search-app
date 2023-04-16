@@ -8,43 +8,38 @@
     },
     {
         "id": "2",
-        "name": "Johan",
+        "name": "Avatar",
         "rating": 2.1,
-        "image": "image/Titanic_poster.png",
+        "image": "image/AvatarPoster.jpg",
         "isFavorite": true
-
     },
     {
         "id": "3",
-        "name": "Titanic",
+        "name": "Cinatit",
         "rating": 2.1,
         "image": "image/Titanic_poster.png",
         "isFavorite": false
-
     },
     {
         "id": "4",
-        "name": "Titanic",
+        "name": "Avatar",
         "rating": 2.1,
-        "image": "image/Titanic_poster.png",
+        "image": "image/AvatarPoster.jpg",
         "isFavorite": false
-
     },
     {
         "id": "5",
-        "name": "Titanic",
+        "name": "Rose",
         "rating": 2.1,
         "image": "image/Titanic_poster.png",
         "isFavorite": false
-
     },
     {
         "id": "6",
-        "name": "Titanic",
+        "name": "Avatar",
         "rating": 2.1,
-        "image": "image/Titanic_poster.png",
+        "image": "image/AvatarPoster.jpg",
         "isFavorite": false
-
     },
     {
         "id": "7",
@@ -52,15 +47,13 @@
         "rating": 2.1,
         "image": "image/Titanic_poster.png",
         "isFavorite": false
-
     },
     {
         "id": "8",
-        "name": "Titanic",
+        "name": "Avatar",
         "rating": 2.1,
-        "image": "image/Titanic_poster.png",
+        "image": "image/AvatarPoster.jpg",
         "isFavorite": false
-
     },
     {
         "id": "9",
@@ -68,15 +61,12 @@
         "rating": 2.1,
         "image": "image/Titanic_poster.png",
         "isFavorite": false
-
     },
     {
         "id": "10",
-        "name": "Titanic",
+        "name": "Avatar",
         "rating": 2.1,
-        "image": "image/Titanic_poster.png",
+        "image": "image/AvatarPoster.jpg",
         "isFavorite": false
-
     }
-
 ]
